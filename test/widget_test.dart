@@ -6,22 +6,6 @@ import 'package:sandwich_shop/screens/menu_screen.dart';
 import 'package:sandwich_shop/screens/order_screen.dart';
 
 void main() {
-  void main() {
-    group('OrderItemDisplay widget tests', () {
-      testWidgets('displays zero sandwiches with no emoji',
-          (WidgetTester tester) async {
-        await tester.pumpWidget(
-          const MaterialApp(
-            home: Scaffold(
-              body: OrderItemDisplay(0, 'Footlong Sub'),
-            ),
-          ),
-        );
-
-        expect(find.text('0 Footlong Sub sandwich(es): '), findsOneWidget);
-      });
-    });
-  }
 
   testWidgets('displays three sandwiches with three emojis',
       (WidgetTester tester) async {
